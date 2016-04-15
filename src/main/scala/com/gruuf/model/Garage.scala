@@ -2,8 +2,6 @@ package com.gruuf.model
 
 import java.util.UUID
 
-import net.liftweb.common.Box
-
 object Garage {
 
   private var bikes: Seq[Bike] = Seq()
@@ -12,8 +10,11 @@ object Garage {
     val id = UUID.randomUUID().toString
     val bike = Bike(id, friendlyName, vin, description)
 
-    bikes = bike +: bikes
+    registerBike(bike)
+  }
 
+  def registerBike(bike: Bike): Bike = {
+    bikes = bike +: bikes
     bike
   }
 
@@ -23,6 +24,10 @@ object Garage {
     } else {
       bikes.filter(_.friendlyName.startsWith(searchName)).sortBy(_.friendlyName)
     }
+  }
+
+  def listBikes: Seq[Bike] = {
+    bikes.sortBy(_.friendlyName)
   }
 
   def find(bikeId: String): Option[Bike] = {
