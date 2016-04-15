@@ -1,0 +1,5 @@
+<body data-lift-content-id="main-content">
+
+<div id="main-content" data-lift="surround?with=default;at=content">
+
+<script type="text/javascript" data-lift="Comments.postCommentFunc"></script>

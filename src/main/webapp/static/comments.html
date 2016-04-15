@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bikes</title>
+  <title>Comments form & list</title>
 
   <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/static/css/index.css"/>
 </head>
-<body data-lift-content-id="main-content">
+<body>
 
 <div class="container">
   <div class="row">
 
-    <div id="main-content" data-lift="surround?with=default;at=content">
+    <div id="main-content">
       <div class="col-md-offset-2 col-md-8">
 
         <div class="well bs-component">
@@ -24,7 +24,7 @@
           </div>
         </div>
 
-        <ol id="comments" class="list-group" data-lift="Comments.render">
+        <ol id="comments" class="list-group">
           <li class="list-group-item panel comment">
 
             <div class="panel panel-default">
@@ -38,7 +38,7 @@
 
           </li>
 
-          <li class="list-group-item panel clearable">
+          <li class="list-group-item panel comment">
 
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -51,7 +51,7 @@
 
           </li>
 
-          <li class="list-group-item panel clearable">
+          <li class="list-group-item panel comment">
 
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -64,7 +64,7 @@
 
           </li>
 
-          <li class="list-group-item panel clearable">
+          <li class="list-group-item panel comment">
 
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -78,8 +78,6 @@
           </li>
 
         </ol>
-
-        <script type="text/javascript" data-lift="Comments.postCommentFunc"></script>
 
       </div>
     </div>

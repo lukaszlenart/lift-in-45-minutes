@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Add bike event form</title>
+  <title>Bike events list</title>
 
   <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/static/css/index.css"/>
 </head>
-<body data-lift-content-id="main-content">
+<body>
 
 <div class="container">
   <div class="row">
 
-    <div id="main-content" data-lift="surround?with=default;at=content">
+    <div id="main-content">
       <div class="col-md-offset-2 col-md-8">
-        <div class="well bs-component" data-lift="BikeEvents.render">
+        <div class="well bs-component">
 
           <div class="panel panel-primary">
             <div class="panel-heading">
@@ -29,7 +29,7 @@
           <ol id="bike-events" class="list-unstyled" >
             <li class="bike-event">
 
-              <div class="panel">
+              <div class="panel panel-default">
                 <div class="panel-heading">
                   <h3 class="panel-title">
                     <span class="event-name">Replaced left mirror</span>
@@ -43,25 +43,33 @@
               </div>
 
             </li>
-            <li class="list-group-item panel clearable">
+            <li class="bike-event">
 
-              <div class="panel panel-primary">
+              <div class="panel panel-danger">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Replaced left mirror - 01/Apr/2016</h3>
+                  <h3 class="panel-title">
+                    <span class="event-name">Replaced left mirror</span>
+                    -
+                    <span class="event-date">01/Apr/2016</span>
+                  </h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body event-description">
                   I had have an accident and had to replace left mirror as it was totally broken
                 </div>
               </div>
 
             </li>
-            <li class="list-group-item panel clearable">
+            <li class="bike-event">
 
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Replaced left mirror - 01/Apr/2016</h3>
+                  <h3 class="panel-title">
+                    <span class="event-name">Replaced left mirror</span>
+                    -
+                    <span class="event-date">01/Apr/2016</span>
+                  </h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body event-description">
                   I had have an accident and had to replace left mirror as it was totally broken
                 </div>
               </div>

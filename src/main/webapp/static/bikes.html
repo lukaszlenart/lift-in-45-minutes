@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bikes</title>
+  <title>Bikes list</title>
 
   <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/static/css/index.css"/>
 </head>
-<body data-lift-content-id="main-content">
+<body>
 
 <div class="container">
   <div class="row">
 
-    <div id="main-content" data-lift="surround?with=default;at=content">
-      <div class="col-md-offset-2 col-md-8" data-lift="Home.render">
+    <div id="main-content">
+      <div class="col-md-offset-2 col-md-8">
 
         <div class="well bs-component">
           <form class="form-inline" role="search">
@@ -27,7 +27,7 @@
         <ol id="bikes" class="list-group">
           <li class="list-group-item panel bike">
 
-            <div class="panel panel-primary">
+            <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">
                   <span class="friendly-name">My Bike</span>
@@ -44,7 +44,7 @@
 
           <li class="list-group-item panel no-bikes-info">
 
-            <div class="panel panel-primary">
+            <div class="panel panel-info">
               <div class="panel-heading">
                 <h3 class="panel-title">There is no bikes registered</h3>
               </div>
