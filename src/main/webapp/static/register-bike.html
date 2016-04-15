@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login form</title>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/static/css/index.css"/>
+</head>
+<body data-lift-content-id="main-content">
+
+<div class="container">
+  <div class="row">
+
+    <div id="main-content" data-lift="surround?with=default;at=content">
+      <div class="col-md-offset-2 col-md-6">
+        <div class="well bs-component">
+
+          <form class="form-horizontal" data-lift="RegisterBike.render">
+            <div class="form-group">
+              <label for="friendly-name" class="col-md-4 control-label">Friendly name</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="friendly-name" placeholder="MyBike">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="vin" class="col-md-4 control-label">VIN</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" id="vin" placeholder="VIN">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description" class="col-md-4 control-label">Description</label>
+              <div class="col-md-8">
+                <textarea class="form-control" id="description" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-4 col-md-8">
+                <button type="submit" class="btn btn-default">Register</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

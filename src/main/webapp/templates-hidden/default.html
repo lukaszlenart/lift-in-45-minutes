@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title data-lift="Menu.title">Ride-on: </title>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/static/css/index.css"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet'
+        type='text/css'>
+
+  <!-- jQuery has to be in head due to lift ajax -->
+  <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="column span-12 last" style="text-align: right">
+    <img class="spinner" alt="" id="ajax-loader" src="/images/ajax-loader.gif">
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Ride-on</a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <span data-lift="Menu.builder?top:class=nav+nav-pills+navbar-nav&linkToSelf=true"></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row page-header">
+    <div data-lift="Msgs?showAll=true"></div>
+  </div>
+
+  <div class="row">
+    <div id="content">The main content will get bound here</div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="/static/js/index.js"></script>
+
+</body>
+</html>

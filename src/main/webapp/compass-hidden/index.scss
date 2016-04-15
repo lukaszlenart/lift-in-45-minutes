@@ -1,0 +1,14 @@
+@import "compass";
+@import "variables";
+@import "bootswatch";
+
+.spinner {
+  display: none;
+  margin-bottom: 0;
+  margin-left: 5px;
+
+  position: absolute;
+  top: 17px;
+  left: 672px;
+  z-index: 1;
+}

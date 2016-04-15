@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bikes</title>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/static/css/index.css"/>
+</head>
+<body data-lift-content-id="main-content">
+
+<div class="container">
+  <div class="row">
+
+    <div id="main-content" data-lift="surround?with=default;at=content">
+      <div class="col-md-offset-2 col-md-8">
+
+        <div class="well bs-component">
+          <div class="form-inline">
+            <div class="form-group col-md-4">
+              <input id="comment-text" type="text" name="comment" class="form-control" placeholder="Say something">
+            </div>
+            <button id="submit-comment" type="button" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+
+        <ol id="comments" class="list-group" data-lift="Comments.render">
+          <li class="list-group-item panel comment">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title comment-date">04/01/2016</h3>
+              </div>
+              <div class="panel-body comment">
+                Helo everyone!
+              </div>
+            </div>
+
+          </li>
+
+          <li class="list-group-item panel clearable">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title comment-date">04/01/2016</h3>
+              </div>
+              <div class="panel-body comment">
+                Helo everyone!
+              </div>
+            </div>
+
+          </li>
+
+          <li class="list-group-item panel clearable">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title comment-date">04/01/2016</h3>
+              </div>
+              <div class="panel-body comment">
+                Helo everyone!
+              </div>
+            </div>
+
+          </li>
+
+          <li class="list-group-item panel clearable">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title comment-date">04/01/2016</h3>
+              </div>
+              <div class="panel-body comment">
+                Helo everyone!
+              </div>
+            </div>
+
+          </li>
+
+        </ol>
+
+        <script type="text/javascript" data-lift="Comments.postCommentFunc"></script>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
