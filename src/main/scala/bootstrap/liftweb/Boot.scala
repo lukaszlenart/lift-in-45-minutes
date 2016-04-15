@@ -7,7 +7,7 @@ import common._
 import http._
 import sitemap._
 import Loc._
-import com.gruuf.model.Garage
+import com.gruuf.model._
 import com.gruuf.snippet._
 import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
