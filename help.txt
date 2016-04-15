@@ -1,5 +1,24 @@
+0. Templates: show static templates
+1. Home: bind current date
+2. Home: surround with template
+4. Home: search for a bike
+
 <body data-lift-content-id="main-content">
 
 <div id="main-content" data-lift="surround?with=default;at=content">
 
+LiftRules.resourceNames = "i18n/messages" :: LiftRules.resourceNames
+
 <script type="text/javascript" data-lift="Comments.postCommentFunc"></script>
+
+.no-bikes-info {
+  display: none;
+}
+
+.no-bikes .no-bikes-info{
+  display: block;
+}
+
+
+Garage.registerBike(Bike("1", "Dragstar", "1233TER", "Yamaha XVS 1100 Dragstar Classic, 2003"))
+Garage.registerBike(Bike("2", "Caponord", "123123BD", "Aprilia ETV 1000 Caponord, 2001"))
