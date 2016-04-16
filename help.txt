@@ -1,6 +1,7 @@
 0. Templates: show static templates
 1. Home: bind current date
 2. Home: surround with template
+3. Register bike: form binding & validation
 4. Home: search for a bike
 
 <body data-lift-content-id="main-content">
@@ -18,6 +19,17 @@ LiftRules.resourceNames = "i18n/messages" :: LiftRules.resourceNames
 .no-bikes .no-bikes-info{
   display: block;
 }
+
+OR
+
+.no-bikes-info {
+  display: none;
+
+  &.no-bikes {
+    display: block;
+  }
+}
+
 
 Garage.registerBike(Bike("d745d5ee-867a-4a5c-a7e1-42d2c2af434a", "Dragstar", "123456789", "Yamaha XVS 1100 Dragstar Classic, 2001"))
 Garage.registerBike(Bike("044d9878-8e81-4f4c-8157-613a581d9826", "Caponord", "987654321", "Aprilia ETV 1000 Caponord, 2003"))
