@@ -8,6 +8,8 @@ import net.liftweb.sitemap._
 import net.liftweb.util._
   import Helpers._
 
+import com.gruuf.model._
+
 class RegisterBike {
 
 }
