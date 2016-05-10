@@ -54,5 +54,11 @@ class Boot {
     LiftRules.jsArtifacts = JQueryArtifacts
     JQueryModule.InitParam.JQuery=JQueryModule.JQuery191
     JQueryModule.init()
+
+/*
+    val bike1 = Garage.registerBike(Bike("d745d5ee-867a-4a5c-a7e1-42d2c2af434a", "Dragstar", "123456789", "Yamaha XVS 1100 Dragstar Classic, 2001"))
+    val bike2 = Garage.registerBike(Bike("044d9878-8e81-4f4c-8157-613a581d9826", "Caponord", "987654321", "Aprilia ETV 1000 Caponord, 2003"))
+*/
+
   }
 }
