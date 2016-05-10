@@ -1,8 +1,10 @@
 0. Templates: show static templates
 1. Home: bind current date
 2. Home: surround with template
-3. Register bike: form binding & validation
-4. Home: search for a bike
+3. Home: search for a bike
+4. Register bike: form binding & validation
+5. Bike events: param & list binding
+6. Bike events: register in Boot & data-lift
 
 <body data-lift-content-id="main-content">
 
