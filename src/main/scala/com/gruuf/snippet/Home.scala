@@ -6,7 +6,7 @@ import net.liftweb.sitemap._
   import Loc._
 import net.liftweb.util._
   import Helpers._
-
+import com.gruuf.model._
 import org.joda.time.DateTime
 
 object Home {
