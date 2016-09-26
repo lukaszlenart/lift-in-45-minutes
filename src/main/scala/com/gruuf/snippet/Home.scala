@@ -9,10 +9,6 @@ import net.liftweb.util._
 import com.gruuf.model._
 import org.joda.time.DateTime
 
-object Home {
-  val menu = Menu.i("Home") / "home"
-}
-
 class Home {
 
   def render = {
