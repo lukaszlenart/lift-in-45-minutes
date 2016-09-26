@@ -2,9 +2,10 @@
 1. Home: bind current date
 2. Home: surround with template
 3. Home: search for a bike
-4. Register bike: form binding & validation
-5. Bike events: param & list binding
-6. Bike events: register in Boot & data-lift
+4. Register bike: form binding
+5: Register bike: validation
+6. Bike events: param & list binding
+7. Bike events: register in Boot & data-lift
 
 <body data-lift-content-id="main-content">
 
