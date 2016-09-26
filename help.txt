@@ -7,6 +7,10 @@
 6. Bike events: param & list binding
 7. Bike events: register in Boot & data-lift
 
+object Home {
+  val menu = Menu.i("Home") / "home"
+}
+
 <body data-lift-content-id="main-content">
 
 <div id="main-content" data-lift="surround?with=default;at=content">
