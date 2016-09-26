@@ -22,7 +22,7 @@ object Garage {
     if (searchName.isEmpty) {
       bikes.sortBy(_.friendlyName)
     } else {
-      bikes.filter(_.friendlyName.startsWith(searchName)).sortBy(_.friendlyName)
+      bikes.filter(_.friendlyName.toLowerCase.startsWith(searchName)).sortBy(_.friendlyName)
     }
   }
 
