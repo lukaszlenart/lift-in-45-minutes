@@ -1,11 +1,11 @@
 0. Templates: show static templates
-1. Home: bind current date
-2. Home: surround with template
-3. Home: search for a bike
-4. Register bike: form binding
-5: Register bike: validation
-6. Bike events: param & list binding
-7. Bike events: register in Boot & data-lift
+1. DEMO1: Home - bind current date
+2. DEMO2: Home - surround with template
+3. DEMO3: Home - bind bikes
+4. DEMO4: Home - search for a bike
+5. DEMO5: Register bike - form binding
+6: DEMO6: Register bike - validation
+7. DEMO7: Bike events - param & list binding
 
 object Home {
   val menu = Menu.i("Home") / "home"
