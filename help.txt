@@ -7,13 +7,31 @@
 6: DEMO6: Register bike - validation
 7. DEMO7: Bike events - param & list binding
 
-object Home {
-  val menu = Menu.i("Home") / "home"
-}
 
 <body data-lift-content-id="main-content">
 
 <div id="main-content" data-lift="surround?with=default;at=content">
 
-<script type="text/javascript" data-lift="Comments.postCommentFunc"></script>
+object Home {
+  val menu = Menu.i("Home") / "home"
+}
 
+object BikeEvents {
+
+  val menu = Menu.param[Bike](
+    "Events",
+    "events",
+    (bikeId) => Garage.find(bikeId),
+    (bike) => bike.id
+  ) / "bike" / * / "events" >>
+    TemplateBox(() => Templates("static" :: "bike-events" :: Nil))
+
+}
+
+class BikeEvents(bike: Bike) {
+
+  def render = {
+    PassThru
+  }
+
+}
