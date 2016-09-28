@@ -30,6 +30,8 @@ class Boot {
           Full(RedirectResponse(Home.menu.loc.calcDefaultHref))
       }) >> Hidden,
 
+      Home.menu,
+
       // /static path to be visible
       Menu.i("Static") / "static" / ** >> Hidden
     )
