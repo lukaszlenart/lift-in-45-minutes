@@ -13,12 +13,12 @@
   <!-- jQuery has to be in head due to lift ajax -->
   <script type="text/javascript" src="/static/js/jquery-1.10.2.min.js"></script>
 </head>
-<body>
+<body data-lift-content-id="main-content">
 <div class="container">
   <div class="row">
 
-    <div id="main-content">
-      <h1>Welcome - <span class="date"></span></h1>
+    <div id="main-content" data-lift="surround?with=default;at=content">
+      <h1 data-lift="Home.render">Welcome - <span class="date"></span></h1>
     </div>
 
   </div>

@@ -1,6 +1,6 @@
 import com.earldouglas.xsbtwebplugin.PluginKeys
 
-name := "Gruuf Webapp"
+name := "Lift in 45 minutes"
 
 version := "0.0.1"
 
